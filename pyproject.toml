@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "bfast-py"
+version = "0.1.0"
+description = "Python implementation of the BFAST and BFAST0n structural change detection algorithms"
+authors = ["vosps"]
+license = "GPL-3.0"
+readme = "README.md"
+packages = [{ include = "bfast", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+cycler = "0.12.1"
+kiwisolver = "1.4.9"
+matplotlib = "3.10.6"
+numpy = "2.4.2"
+pandas = "2.2.2"
+patsy = "1.0.2"
+pillow = "12.1.1"
+pycallgraph2 = "1.1.3"
+pyparsing = "3.3.2"
+python-dateutil = "2.9.0.post0"
+pytz = "2025.2"
+scipy = "1.17.0"
+six = "1.17.0"
+statsmodels = "0.14.6"
+numba = ">=0.60.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
