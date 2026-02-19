@@ -3,9 +3,9 @@ from functools import partial
 
 import numpy as np
 
-from recresid import recresid
+from .recresid import recresid
 try:
-    from numba_funcs import recresid_numba, ssr_triang_numba_loop
+    from .numba_funcs import recresid_numba, ssr_triang_numba_loop
     HAS_NUMBA = True
 except ImportError:
     HAS_NUMBA = False

@@ -4,9 +4,9 @@ np.set_printoptions(precision=2, linewidth=120)
 import matplotlib.pyplot as plt
 import pandas as pd
 
-import datasets
-from utils import LoggingBase
-from ssr_triang import ssr_triang
+from . import datasets
+from .utils import LoggingBase
+from .ssr_triang import ssr_triang
 
 
 class Breakpoints(LoggingBase):

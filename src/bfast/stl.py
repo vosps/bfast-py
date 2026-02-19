@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 import statsmodels.tsa.seasonal as sm
-import datasets
+from . import datasets
 import pandas as pd
 
 

@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.ticker import MaxNLocator
 
-from bfast import BFAST
-from datasets import *
+from .bfast import BFAST
+from .datasets import *
 
 
 def interp_nans(x):

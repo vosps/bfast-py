@@ -1,1 +1,1 @@
-from . import bfast
+from .bfast import *

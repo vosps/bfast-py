@@ -4,7 +4,7 @@ from pycallgraph2.output import GraphvizOutput
 from pycallgraph2 import GlobbingFilter
 
 
-from breakpoints import *
+from .breakpoints import *
 import numpy as np
 
 def filter_fun(name):

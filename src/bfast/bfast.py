@@ -2,16 +2,16 @@ import numpy as np
 import statsmodels.api as sm
 
 try:
-    from numba_funcs import fast_ols, fast_predict
+    from .numba_funcs import fast_ols, fast_predict
     HAS_NUMBA = True
 except ImportError:
     HAS_NUMBA = False
 
-import utils
-from datasets import *
-from stl import STL
-from efp import EFP
-from breakpoints import Breakpoints
+from . import utils
+from .datasets import *
+from .stl import STL
+from .efp import EFP
+from .breakpoints import Breakpoints
 
 
 class BFASTResult():

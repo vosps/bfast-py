@@ -2,8 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
 
-import datasets
-import utils
+from . import datasets
+from . import utils
 
 
 class EFP(utils.LoggingBase):

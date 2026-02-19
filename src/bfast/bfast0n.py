@@ -1,8 +1,8 @@
 import numpy as np
 
-import datasets
-from breakpoints import Breakpoints
-from utils import omit_nans, LoggingBase
+from . import datasets
+from .breakpoints import Breakpoints
+from .utils import omit_nans, LoggingBase
 
 
 class BFAST0n(LoggingBase):
