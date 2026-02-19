@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
 
-from . import datasets
 from . import utils
 
 
@@ -132,6 +131,8 @@ def test_dataset(y, name, h=0.15, level=0.15):
 
 
 if __name__ == "__main__":
+    from . import datasets
+
     # test_dataset(datasets.nhtemp, "nhtemp")
     test_dataset(datasets.nile, "nile")
 

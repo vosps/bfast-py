@@ -4,7 +4,6 @@ import pandas as pd
 from matplotlib.ticker import MaxNLocator
 
 from .bfast import BFAST
-from .datasets import *
 
 
 def interp_nans(x):
@@ -98,6 +97,8 @@ def plot(name, y, x, f, season, level=0.05, h=0.15, max_iter=10, nan_clr="crimso
 
 
 if __name__ == "__main__":
+    from .datasets import *
+
     plot("harvest", harvest, harvest_dates, harvest_freq, "harmonic")
     plot("nile", nile, nile_dates, None, "none")
     plot("SIMTS", simts_sum, simts_dates, simts_freq, "harmonic", level=0.35, h=0.3, max_iter=2)

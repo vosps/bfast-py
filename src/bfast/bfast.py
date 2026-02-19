@@ -8,7 +8,6 @@ except ImportError:
     HAS_NUMBA = False
 
 from . import utils
-from .datasets import *
 from .stl import STL
 from .efp import EFP
 from .breakpoints import Breakpoints
@@ -285,6 +284,7 @@ def run_test(y, x, f, season, level=0.05, h=0.15, max_iter=10, verbosity=0):
 
 
 if __name__ == "__main__":
+    from .datasets import *
     # logging_setup()
     # run_test(nile, nile_dates, None, "none")
     # run_test(simts_sum, simts_dates, simts_freq, "harmonic", level=0.35, h=0.3, max_iter=2)

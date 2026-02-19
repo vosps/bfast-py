@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 import statsmodels.tsa.seasonal as sm
-from . import datasets
 import pandas as pd
 
 
@@ -40,6 +39,8 @@ class STL():
 
 
 if __name__ == "__main__":
+    from . import datasets
+
     Yt = datasets.ndvi
     ti = datasets.ndvi_dates
     f = datasets.ndvi_freq

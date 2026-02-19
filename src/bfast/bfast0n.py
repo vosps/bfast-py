@@ -1,6 +1,5 @@
 import numpy as np
 
-from . import datasets
 from .breakpoints import Breakpoints
 from .utils import omit_nans, LoggingBase
 
@@ -60,6 +59,8 @@ class BFAST0n(LoggingBase):
 
 
 if __name__ == "__main__":
+    from . import datasets
+
     y = datasets.ndvi
     x = datasets.ndvi_dates
     freq = datasets.ndvi_freq
